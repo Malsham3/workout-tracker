@@ -20,7 +20,8 @@ require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 //connect
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true,
+useUnifiedTopology: true });
 
 //console message
 app.listen(PORT, () => {
