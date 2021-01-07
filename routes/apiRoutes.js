@@ -1,8 +1,17 @@
 const Workout = require("../models/workout.js");
 
 module.exports = function (app) {
+
   app.get("/api/workouts", function (req, res) {
-    Workout.find()
+    Workout.aggregate([
+      {
+        $addFields: {
+          totalDuration: {
+            $sum: "$exercises.duration",
+          },
+        },
+      },
+    ])
       .then((data) => {
         res.json(data);
       })
@@ -12,7 +21,15 @@ module.exports = function (app) {
   });
 
   app.get("/api/workouts/range", function (req, res) {
-    Workout.find()
+    Workout.aggregate([
+      {
+        $addFields: {
+          totalDuration: {
+            $sum: "$exercises.duration",
+          },
+        },
+      },
+    ])
       .then((data) => {
         res.json(data);
       })
@@ -28,7 +45,7 @@ module.exports = function (app) {
       })
       .catch((err) => {
         res.json(err);
-      })
+      });
   });
 
   app.post("/api/workouts/range", function (req, res) {
@@ -47,7 +64,7 @@ module.exports = function (app) {
       {
         $push: { exercises: req.body },
       },
-      { new: true }
+      { new: true, runValidators: true }
     )
       .then((data) => {
         res.json(data);
