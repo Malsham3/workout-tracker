@@ -33,5 +33,9 @@ The technologies used for this project are:
 - [GitHub Repository](https://github.com/Malsham3/workout-tracker)
 - [Heroku Depoloyment]()
 
+https://floating-lake-00259.herokuapp.com/ 
+
+https://git.heroku.com/floating-lake-00259.git
+
 ## Questions / Contributions
 Email me at m.alsham627@gmail.com
