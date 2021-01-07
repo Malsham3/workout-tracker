@@ -1,10 +1,10 @@
 # workout-tracker
 
 ## Demo
-
+![Workout-tracker](https://user-images.githubusercontent.com/73148818/103862494-72601b80-507c-11eb-9dc8-bfc9cb857471.gif)
 
 ## Project description
-The goal of this project is to create a webb application to help users track their fitness progress. The user is able to create workouts/ workout plans and add exercises (resistance and/or cardio) to each workout plan. The user is then able to view how much work they've done on the "Dashboard" tab. 
+The goal of this project is to create a webb application to help users track their fitness progress. The user is able to create workouts/ workout plans and add exercises (resistance and/or cardio) to each workout plan. The user is then able to view how much work they've done on the "Dashboard" tab in a form of charts and/or stats.
 
 ## Usage
 First timers: 
@@ -31,11 +31,7 @@ The technologies used for this project are:
 
 ## Links
 - [GitHub Repository](https://github.com/Malsham3/workout-tracker)
-- [Heroku Depoloyment]()
-
-https://floating-lake-00259.herokuapp.com/ 
-
-https://git.heroku.com/floating-lake-00259.git
+- [Heroku Depoloyment](https://floating-lake-00259.herokuapp.com)
 
 ## Questions / Contributions
 Email me at m.alsham627@gmail.com
